@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DASA + Agents 2026 workshop at AIAS 2026 (Chen Institute and UC Berkeley CDSS, San Francisco, Nov 5-7, 2026). Distortion-Aware Spatial AI and Compute-Grounded Spatial Agents for Scientific Discovery.">
+  <title>DASA + Agents 2026 — Distortion-Aware Spatial AI and Compute-Grounded Spatial Agents for Scientific Discovery</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="hero">
+    <div class="container">
+      <div class="eyebrow">AIAS 2026 Workshop Proposal · San Francisco · Nov 5–7, 2026</div>
+      <h1>Distortion-Aware Spatial AI<br><span class="amp">and</span><br>Compute-Grounded Spatial Agents<br>for Scientific Discovery</h1>
+      <p class="tagline">A full-day workshop unifying two pillars that together make spatial AI trustworthy enough to accelerate science: a taxonomy of denial, additive, and deception-based distortion, paired with compute-grounded agents that ground LLM reasoning in deterministic spatial computation.</p>
+      <div class="dates-ribbon">
+        <div><strong>Papers due</strong><br>Aug 15, 2026</div>
+        <div><strong>Notifications</strong><br>Sept 12, 2026</div>
+        <div><strong>Camera-ready</strong><br>Sept 25, 2026</div>
+        <div><strong>Workshop</strong><br>Nov 5–7, 2026</div>
+      </div>
+      <nav class="topnav">
+        <a href="#about">About</a>
+        <a href="#pillars">Two Pillars</a>
+        <a href="#topics">Topics</a>
+        <a href="#dates">Dates</a>
+        <a href="#submission">Submit</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#organizers">Organizers</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+
+    <section id="about">
+      <h2>About the Workshop</h2>
+      <p>Spatial data is the substrate of modern scientific discovery, from climate projections and Earth-observation foundation models to autonomous-vehicle perception, multiplexed tissue imaging, and material microscopy. Yet this substrate is distorted. Ships go dark. GPS is spoofed. Earth observation suffers projection error, sensor noise, and labelled-data scarcity. Multiplexed Immunofluorescence (MxIF) and spatial-transcriptomics pipelines accumulate registration drift and batch effects. Material-microscopy images are corrupted by beam damage and simulation-to-experiment domain gaps.</p>
+      <p>This workshop unifies two pillars that together make spatial AI trustworthy enough to accelerate science. The first pillar is <em>distortion-aware spatial AI</em>: a taxonomy of denial-based, additive, and deception-based distortion, paired with physics-informed priors, world-model reasoning, and human-in-the-loop verification. The second pillar is <em>compute-grounded spatial agents</em>: agents that ground reasoning in deterministic spatial computation (scene graphs, entropy-guided reflection, self-healing pipelines) and automate scientific discovery loops across Earth, biomedical, and material sciences.</p>
+      <p>Outputs include a community white paper, the <em>DASA + Agents Bench</em> proposal, and an open directory of scientific problems requiring distortion-aware spatial agents.</p>
+    </section>
+
+    <section id="pillars">
+      <h2>Two Pillars</h2>
+      <div class="pillars-grid">
+        <article class="pillar">
+          <div class="pillar-tag">Pillar A</div>
+          <h3>Distortion-Aware Spatial AI</h3>
+          <p>Detect, reason about, and recover from three forms of distortion in scientific spatial data:</p>
+          <ul>
+            <li><strong>Denial-based</strong> (subtraction): AIS dark fleets, GPS jamming, MxIF channel dropouts, missing satellite passes.</li>
+            <li><strong>Additive noise</strong>: sensor noise, projection error, registration drift, autofluorescence, beam damage.</li>
+            <li><strong>Deception-based</strong> (substitution): GPS spoofing, trajectory deepfakes, synthetic-image attacks, simulation-to-experiment gaps.</li>
+          </ul>
+          <p>Methods: space-time prisms, kinematic priors, physics-informed diffusion, geographically-weighted regularizers, world-model reconstruction error, human-in-the-loop filter-and-refine.</p>
+        </article>
+
+        <article class="pillar">
+          <div class="pillar-tag">Pillar B</div>
+          <h3>Compute-Grounded Spatial Agents</h3>
+          <p>Agents that LLMs alone cannot deliver, because language models hallucinate distances, miscount objects, and lose track of spatial relations. Compute-grounding solves this by separating deterministic spatial computation from generative reasoning:</p>
+          <ul>
+            <li><strong>Compute-Grounded Reasoning (CGR)</strong>: extract entities and positions, compute spatial facts deterministically, let LLMs reason only over verified facts.</li>
+            <li><strong>Structured spatial scene graphs</strong>: queryable graphs with typed relations and computed distances.</li>
+            <li><strong>Entropy-guided reflection</strong>: confidence routing across tiered models.</li>
+            <li><strong>Self-healing ML pipelines</strong>: parse error, fix code, retry; never zero-score.</li>
+          </ul>
+          <p>Targets: lab-automation agents, multi-modal spatial QA, scientific ML automation (MLE-Bench style), robotic-microscope path planning, autonomous-vehicle perception agents.</p>
+        </article>
+      </div>
+      <p class="bridge"><strong>Bridge:</strong> distortion-aware methods are the substrate that makes spatial agents trustworthy enough for scientific deployment. The two pillars are co-equal and mutually reinforcing.</p>
+    </section>
+
+    <section id="topics">
+      <h2>Topics of Interest</h2>
+      <ol class="topics">
+        <li><strong>T1. Distortion taxonomy across scientific spatial data.</strong> Denial, additive, deception, anchored on the dissertation Distortion-Aware Spatial Data Science.</li>
+        <li><strong>T2. Physics-informed generative and trajectory models.</strong> Pi-DPM, GCDM, Kriging-informed Conditional Diffusion, kinematic priors, variogram regularizers, conservation laws.</li>
+        <li><strong>T3. Physics-Guided Foundation Models for the Earth system.</strong> GraphCast, FourCastNet, Pangu, Prithvi, DOFA, SatMAE++, CROMA, Scale-MAE, CorrDiff, StormCast, plus trajectory FMs (UniTraj, UrbanDiT, TrajFM, GeoDiffusion).</li>
+        <li><strong>T4. Compute-grounded spatial agents.</strong> Compute-Grounded Reasoning, scene-graph engines, entropy-guided reasoning, self-healing ML pipelines, cross-provider strong-tier routing.</li>
+        <li><strong>T5. Spatial agents for scientific discovery automation.</strong> Lab-automation agents, multi-modal spatial QA, MLE-Bench-style research agents, autonomous-driving and ocean-science agents.</li>
+        <li><strong>T6. Domain frontiers.</strong>
+          <ul>
+            <li><em>Biomedical:</em> Multiplexed Immunofluorescence (MxIF) and adjacent platforms (CODEX, MIBI, Vectra Polaris, PhenoCycler-Fusion, Visium HD, Slide-seq, Stereo-seq, MERFISH); cell segmentation under registration drift, neighborhood-graph construction, brain-atlas spatial transcriptomics (Allen Brain Atlas, BICCN).</li>
+            <li><em>Material science:</em> crystal structure prediction (Materials Project, OQMD, MatterGen, GNoME), MOF discovery (the Yaghi line; AIAS+ host alignment), STEM/TEM microscopy denoising, grain-boundary and defect mapping, beam-damage compensation, simulation-to-experiment domain-gap closure via PGFMs constrained by DFT energies.</li>
+            <li><em>Earth and autonomy:</em> autonomous-vehicle perception, sanctions enforcement and dark-fleet detection, climate downscaling, ocean science.</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <section id="dates">
+      <h2>Important Dates</h2>
+      <table class="dates">
+        <tr><td>Workshop proposal submitted</td><td>May 15, 2026</td></tr>
+        <tr><td>Proposal notification</td><td>May 29, 2026</td></tr>
+        <tr><td>CFP released</td><td>June 5, 2026</td></tr>
+        <tr><td>Paper submission opens</td><td>July 1, 2026</td></tr>
+        <tr><td><strong>Paper submission deadline</strong></td><td><strong>August 15, 2026</strong></td></tr>
+        <tr><td>Review period</td><td>Aug 16 – Sept 5, 2026</td></tr>
+        <tr><td>Author notifications</td><td>September 12, 2026</td></tr>
+        <tr><td>Camera-ready due</td><td>September 25, 2026</td></tr>
+        <tr><td>Final program published</td><td>October 1, 2026</td></tr>
+        <tr><td><strong>Workshop date</strong></td><td><strong>One day within Nov 5–7, 2026</strong></td></tr>
+        <tr><td>Community white-paper draft</td><td>December 15, 2026</td></tr>
+        <tr><td>DASA + Agents Bench v0.1 release</td><td>January 31, 2027</td></tr>
+      </table>
+    </section>
+
+    <section id="submission">
+      <h2>Submission</h2>
+      <p>Two tracks:</p>
+      <ul>
+        <li><strong>Long papers</strong> (8 pages + unlimited references). Mature methodological or empirical contributions. ~6 accepted; oral slots in contributed sessions.</li>
+        <li><strong>Short papers / extended abstracts</strong> (4 pages + references, or 2-page extended abstracts). Early-stage ideas, position papers, application showcases, benchmark proposals. ~25–30 accepted; poster slots.</li>
+      </ul>
+      <p>Anonymous double-blind review. Three reviewers per paper, scoring on three axes (novelty, technical quality, relevance to the two pillars). Submissions via OpenReview (portal opens July 1, 2026).</p>
+      <p>Non-archival relative to AIAS+ proceedings; authors retain rights to extend to NeurIPS, ICML, SIGSPATIAL, KDD, ICLR, or Nature Methods.</p>
+      <p>Travel scholarships available for up to 10 students from underrepresented institutions or Global-South affiliations, contingent on a modest NSF Conference grant currently in preparation.</p>
+    </section>
+
+    <section id="speakers">
+      <h2>Keynote Speakers (invited)</h2>
+      <div class="speakers-grid">
+        <div class="speaker">
+          <h3>Keynote 1</h3>
+          <p class="role">Spatial AI and the distortion taxonomy</p>
+          <p>A senior spatial-AI / GIScience anchor drawn from the Advisory Board. Confirmation by July 15, 2026.</p>
+        </div>
+        <div class="speaker">
+          <h3>Keynote 2</h3>
+          <p class="role">Physics-Guided Foundation Models for the Earth system</p>
+          <p>Target: Karthik Mukkavilli (IBM Prithvi) or a comparable foundation-model-for-science leader.</p>
+        </div>
+        <div class="speaker">
+          <h3>Keynote 3</h3>
+          <p class="role">Compute-grounded spatial agents for scientific discovery</p>
+          <p>Target: Sergey Levine (UC Berkeley) or a comparable spatial-agent / embodied-AI researcher.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="schedule">
+      <h2>Tentative Schedule</h2>
+      <table class="schedule">
+        <tr><td>08:30–09:00</td><td>Registration, coffee, lightning poster previews</td></tr>
+        <tr><td>09:00–09:15</td><td>Opening: distortion taxonomy primer (Arun Sharma)</td></tr>
+        <tr><td>09:15–09:50</td><td>Keynote 1: Spatial AI and distortion</td></tr>
+        <tr><td>09:50–10:25</td><td>Keynote 2: Physics-Guided Foundation Models</td></tr>
+        <tr><td>10:25–10:45</td><td>Coffee</td></tr>
+        <tr><td>10:45–12:00</td><td>Contributed Session A: Distortion and Generation (5 talks)</td></tr>
+        <tr><td>12:00–13:30</td><td>Lunch and structured matchmaking poster reception (30 posters)</td></tr>
+        <tr><td>13:30–14:05</td><td>Keynote 3: Compute-grounded spatial agents</td></tr>
+        <tr><td>14:05–15:20</td><td>Contributed Session B: Foundation Models and Spatial Agents (5 talks)</td></tr>
+        <tr><td>15:20–15:40</td><td>Coffee</td></tr>
+        <tr><td>15:40–16:30</td><td>Panel 1: Open scientific problems in distortion-aware spatial AI</td></tr>
+        <tr><td>16:30–17:20</td><td>Panel 2: Benchmarks, evaluation, and reproducibility</td></tr>
+        <tr><td>17:20–17:40</td><td>White-paper drafting session (open mic)</td></tr>
+        <tr><td>17:40–18:00</td><td>Closing remarks, awards, forward agenda</td></tr>
+        <tr><td>18:00–19:30</td><td>Optional networking reception (off-site)</td></tr>
+      </table>
+    </section>
+
+    <section id="organizers">
+      <h2>Organizers and Advisory Board</h2>
+
+      <h3>Lead Organizer</h3>
+      <p><strong>Arun Sharma, Ph.D.</strong> — University of Minnesota (Ph.D., July 2025). Author of <em>Distortion-Aware Spatial Data Science</em> and lead author of Pi-DPM (SIGSPATIAL GeoAnomalies 2025). First author at ACM TIST 2022, ACM TIST 2024, and ACM SIGSPATIAL 2022. Author of Spatial Atlas (Berkeley AgentX-AgentBeats Phase 2, 2025). Doctoral Dissertation Fellow, 2022–23. Reviewer for NeurIPS, ICML, ICLR, CVPR, ECCV, AAAI, IJCAI, SIGKDD, SIGSPATIAL, TKDE, JMLR.</p>
+
+      <h3>Advisory Board (invited, awaiting confirmation by April 30, 2026)</h3>
+      <ul class="board">
+        <li><strong>Spatial AI / GIScience.</strong> Prof. Vipin Kumar (UMN, NAE Member, McKnight Distinguished Professor; climate ML).</li>
+        <li><strong>Physics-informed foundation models.</strong> Prof. Aditi Krishnapriyan (UC Berkeley EECS; physics-informed neural operators).</li>
+        <li><strong>Geospatial foundation models, industry.</strong> Dr. Karthik Mukkavilli (IBM Research, Prithvi co-lead).</li>
+        <li><strong>Spatial agents and embodied reasoning.</strong> Prof. Sergey Levine (UC Berkeley EECS; embodied agents, world models).</li>
+        <li><strong>Biomedical spatial AI.</strong> Prof. Manolis Kellis (MIT CSAIL; computational biology, spatial transcriptomics, brain-atlas integrative genomics).</li>
+        <li><strong>Material science spatial AI.</strong> Prof. Omar Yaghi (UC Berkeley Chemistry, AIAS 2026 host organizer; metal-organic frameworks).</li>
+        <li><strong>AI safety and dual-use governance.</strong> A research scientist at Anthropic, OpenAI, or Stanford HAI, to be confirmed.</li>
+      </ul>
+
+      <h3>Program Committee (representative)</h3>
+      <p>Vipin Kumar (UMN), Ravi Janardan (UMN), Varun Chandola (UB), Aditi Krishnapriyan (UC Berkeley), Anima Anandkumar (Caltech), Karthik Mukkavilli (IBM), Hannes Mühleisen (NVIDIA Earth-2), Ranveer Chandra (Microsoft AI for Good), Stefano Ermon (Stanford), Sergey Levine (UC Berkeley), Christopher Manning (Stanford), Manolis Kellis (MIT), Aviv Regev (Genentech), Omar Yaghi (UC Berkeley), Kayvon Fatahalian (Stanford), Subhankar Ghosh (UMN), Mingzhou Yang (UMN), plus 20 additional invited early-career members.</p>
+    </section>
+
+    <section id="ethics">
+      <h2>Dual-Use, Ethics, and DEI</h2>
+      <p><strong>Dual-use.</strong> Trajectory analysis and Earth observation have dual-use applications, supporting humanitarian missions (illegal-fishing detection, sanctions enforcement, search and rescue) and posing surveillance risks. Submissions whose primary deployment is offensive military targeting will not be accepted. Defensive applications are explicitly welcomed: sanctions enforcement, marine-reserve protection, autonomous-vehicle safety, biomedical spatial omics, materials discovery.</p>
+      <p><strong>Diversity, equity, and inclusion.</strong> Travel scholarships for up to 10 students from underrepresented institutions or Global-South affiliations. Active solicitation of early-career and Global-South reviewers (30 percent quota on the program committee). Code of conduct adopted from the ACM and NeurIPS standards.</p>
+      <p><strong>Sustainability.</strong> Electronic-only registration packets; published carbon-per-meal estimates; opt-in attendee carbon offset; hybrid streaming to reduce cross-country travel; recordings of all sessions for post-workshop access.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Lead organizer: Arun Sharma, Ph.D. <br>
+      Email: <a href="mailto:arun08sharma@gmail.com">arun08sharma@gmail.com</a><br>
+      Portfolio: <a href="https://arunshar.github.io/portfolio/">arunshar.github.io/portfolio</a><br>
+      GitHub repo: <a href="https://github.com/arunshar/dasa-aias2026">github.com/arunshar/dasa-aias2026</a></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>AIAS 2026 — <a href="https://www.aiasplus.org/">AI for Accelerated Research Symposium</a>, co-organized by the <a href="https://www.cheninstitute.org/">Tianqiao and Chrissy Chen Institute</a> and <a href="https://cdss.berkeley.edu/">UC Berkeley CDSS</a>, San Francisco, November 5–7, 2026.</p>
+      <p class="small">Workshop proposal status: submitted May 15, 2026. Site last updated May 14, 2026. Speaker, advisory board, and PC names marked "invited" until confirmation. The workshop is a community proposal; AIAS+ acceptance pending.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
