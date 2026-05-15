@@ -27,7 +27,7 @@ gh api -X POST /repos/arunshar/dasa-aias2026/pages \
   -f source.branch=main -f source.path=/
 ```
 
-Site URL after enablement: `https://dasa-aias2026.github.io` (or `https://arunshar.github.io/dasa-aias2026/` depending on the chosen Pages config).
+Live site: **https://arunshar.github.io/dasa-aias2026/** (deployed May 15, 2026).
 
 ## File layout
 
